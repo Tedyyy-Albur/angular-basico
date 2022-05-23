@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 
 <h3>La base es: <strong> {{ base }}</strong></h3>
 
-<button (click)="acumular(base)">+ {{base}}</button>
+<button (click)="acumular(base)">{{base}}</button>
 
 <span>{{ numero }}</span>
 
@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
 export class ContadorComponent{
     titulo: string = 'Contador App';
   numero: number = 10;
-  base: number = 5;
+  base: number = 10;
 
   acumular(valor: number) {
     this.numero += valor;
